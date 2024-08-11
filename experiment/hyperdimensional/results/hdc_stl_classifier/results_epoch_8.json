@@ -1,5 +1,5 @@
 {
-    "training_accuracy": 0.866386217948718,
-    "eval_accuracy": 0.386125,
+    "training_accuracy": 0.9681490384615384,
+    "eval_accuracy": 0.364,
     "lr": 0.06634204312890622
 }

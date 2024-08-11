@@ -111,6 +111,12 @@ To replicate the results described in the paper, follow these detailed steps:
 
 ### Step 3: Generate Comparison Graphs
 
+1. **Run HDC Classifier graph Generation Script:**
+
+   ```bash
+   python graph_hdc_classifier.py
+   ```
+
 1. **Navigate back to the Experiment Directory:**
 
    ```bash
@@ -131,10 +137,16 @@ To replicate the results described in the paper, follow these detailed steps:
   experiment/hyperdimensional/results/stl10
   ```
 
-- **The graphed results can be found in the following directory:**
+- **The graphed CNN classifier results can be found in the following directory:**
 
   ```plaintext
   experiment
+  ```
+
+- **The graphed HDC classifier results can be found in the following directory:**
+
+  ```plaintext
+  experiment/hyperdimensional/results/hdc_stl_classifier
   ```
 
 ### Visual Results
@@ -143,9 +155,13 @@ To replicate the results described in the paper, follow these detailed steps:
 
   ![Reconstruction Results](./experiment/hyperdimensional/results/stl10/comparison_epoch_10_batch_0.png)
 
-- **Graphed Comparison With Heatmaps:**
+- **Graphed CNN Classifier Comparison With Heatmaps:**
 
-  ![Graphed Results](./experiment/comparison_with_heatmaps.png)
+  ![Graphed CNN Results](./experiment/comparison_with_heatmaps.png)
+
+- **Graphed HDC Classifier:**
+
+  ![Graphed Results](./experiment/hyperdimensional/results/hdc_stl_classifier/Accuracy_over_epochs.png)
 
 ## Citation
 

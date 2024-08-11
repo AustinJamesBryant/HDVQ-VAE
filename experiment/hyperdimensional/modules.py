@@ -67,6 +67,9 @@ class VectorQuantizer(nn.Module):
         if not self.training:
             x = (x > 0.5).to(x.dtype)
 
+        # Rescale to match codebook's bipolar vectors
+        x = (x * 2) - 1
+
         # Flatten the input except for the batch dimension
         flat_x = x.permute(0, 2, 3, 1).contiguous().view(-1, self.dim)
 
@@ -107,6 +110,9 @@ class VectorQuantizer(nn.Module):
         # If not in training we can set the values to 0 or 1
         if not self.training:
             x = (x > 0.5).to(x.dtype)
+
+        # Rescale to match codebook's bipolar vectors
+        x = (x * 2) - 1
 
         # Flatten the input except for the batch dimension
         flat_x = x.permute(0, 2, 3, 1).contiguous().view(-1, self.dim)
