@@ -1,0 +1,6 @@
+{
+    "class cross entropy loss": 1.5313787460327148,
+    "training_accuracy": 0.4652,
+    "eval_accuracy": 0.4035,
+    "lr": 0.001
+}
